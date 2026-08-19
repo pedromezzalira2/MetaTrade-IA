@@ -1,0 +1,107 @@
+nohup: ignoring input
+INFO:     Will watch for changes in these directories: ['/home/pedro/modelo/MetaTrader']
+INFO:     Uvicorn running on http://0.0.0.0:8090 (Press CTRL+C to quit)
+INFO:     Started reloader process [1701709] using WatchFiles
+INFO:     Started server process [1701792]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'helper.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1701792]
+INFO:     Started server process [1773364]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'helper.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1773364]
+INFO:     Started server process [1774036]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1774036]
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/pedro/modelo/MetaTrader/main.py", line 53, in <module>
+    settings = Settings()
+               ^^^^^^^^^^
+  File "/home/pedro/modelo/MetaTrader/.venv/lib/python3.12/site-packages/pydantic_settings/main.py", line 262, in __init__
+    super().__init__(**__pydantic_self__.__class__._settings_build_values(sources, init_kwargs))
+  File "/home/pedro/modelo/MetaTrader/.venv/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for Settings
+supabase_url
+  Field required [type=missing, input_value={'token': 'Z22zyedrAfS7Cm..., 'auto_reload': 'true'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+supabase_key
+  Field required [type=missing, input_value={'token': 'Z22zyedrAfS7Cm..., 'auto_reload': 'true'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+capital_total
+  Field required [type=missing, input_value={'token': 'Z22zyedrAfS7Cm..., 'auto_reload': 'true'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/pedro/modelo/MetaTrader/main.py", line 53, in <module>
+    settings = Settings()
+               ^^^^^^^^^^
+  File "/home/pedro/modelo/MetaTrader/.venv/lib/python3.12/site-packages/pydantic_settings/main.py", line 262, in __init__
+    super().__init__(**__pydantic_self__.__class__._settings_build_values(sources, init_kwargs))
+  File "/home/pedro/modelo/MetaTrader/.venv/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for Settings
+supabase_url
+  Field required [type=missing, input_value={'token': 'Z22zyedrAfS7Cm..., 'auto_reload': 'true'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+supabase_key
+  Field required [type=missing, input_value={'token': 'Z22zyedrAfS7Cm..., 'auto_reload': 'true'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+capital_total
+  Field required [type=missing, input_value={'token': 'Z22zyedrAfS7Cm..., 'auto_reload': 'true'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Started server process [1787370]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'helper.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1787370]
+INFO:     Started server process [1789776]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
