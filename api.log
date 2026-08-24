@@ -105,3 +105,621 @@ INFO:     Finished server process [1787370]
 INFO:     Started server process [1789776]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+WARNING:  Invalid HTTP request received.
+INFO:     85.217.149.36:35176 - "GET / HTTP/1.1" 404 Not Found
+INFO:     65.49.1.38:52988 - "GET / HTTP/1.1" 404 Not Found
+INFO:     65.49.1.38:7539 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     65.49.1.39:36957 - "GET /?format=json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     45.198.224.26:48186 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     45.156.128.157:36446 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.156.128.158:18432 - "GET /zabbix/favicon.ico HTTP/1.1" 404 Not Found
+INFO:     45.156.128.158:30798 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     45.156.128.156:55048 - "GET /admin/ HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     45.156.128.159:23172 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.156.128.159:54888 - "GET /api/session/properties HTTP/1.1" 404 Not Found
+INFO:     45.156.128.158:41560 - "GET /Telerik.Web.UI.WebResource.axd?type=rau HTTP/1.1" 404 Not Found
+INFO:     24.199.111.122:59968 - "GET / HTTP/1.1" 404 Not Found
+INFO:     24.199.111.122:59976 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     20.55.24.39:51390 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     45.198.224.26:36232 - "GET /login HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     8.216.17.163:36410 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57226 - "GET /health HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     195.182.16.7:42548 - "GET /SDK/webLanguage HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:54625 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1789776]
+INFO:     Started server process [4089964]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  Invalid HTTP request received.
+INFO:     127.0.0.1:48678 - "POST /v1/autorizar-entrada HTTP/1.1" 401 Unauthorized
+WARNING:  Invalid HTTP request received.
+INFO:     3.129.187.38:30206 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.129.187.38:40630 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     45.194.67.30:50936 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.194.67.30:50938 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     181.214.221.213:54676 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:54677 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:54685 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:54706 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:54715 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:54720 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:54728 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:54742 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:54745 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     45.194.92.47:11410 - "GET /judge HTTP/1.1" 404 Not Found
+INFO:     45.194.92.47:11418 - "GET /judge HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     65.49.1.232:8934 - "GET / HTTP/1.1" 404 Not Found
+INFO:     65.49.1.234:57921 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:54849 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:54850 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:54851 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:54962 - "POST /v1/autorizar-entrada HTTP/1.1" 401 Unauthorized
+INFO:     181.214.221.213:54972 - "POST /v1/autorizar-entrada HTTP/1.1" 401 Unauthorized
+INFO:     181.214.221.213:54976 - "POST /v1/autorizar-entrada HTTP/1.1" 401 Unauthorized
+INFO:     181.214.221.213:55071 - "POST /v1/autorizar-entrada HTTP/1.1" 401 Unauthorized
+INFO:     181.214.221.213:55117 - "POST /v1/autorizar-entrada HTTP/1.1" 401 Unauthorized
+INFO:     181.214.221.213:55122 - "POST /v1/autorizar-entrada HTTP/1.1" 401 Unauthorized
+INFO:     181.214.221.213:55167 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:55177 - "POST /v1/autorizar-entrada HTTP/1.1" 401 Unauthorized
+INFO:     181.214.221.213:55212 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:55248 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:55249 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:55346 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:55351 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:55353 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:55367 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     45.198.224.26:46050 - "GET /login HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:55416 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:55420 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     204.76.203.43:52294 - "GET /dispatch.asp HTTP/1.1" 404 Not Found
+INFO:     45.194.67.29:32878 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.194.67.29:46000 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     71.6.199.23:33156 - "GET / HTTP/1.1" 404 Not Found
+INFO:     71.6.199.23:33162 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     211.195.15.247:43406 - "GET / HTTP/1.0" 404 Not Found
+INFO:     184.105.139.70:32850 - "GET / HTTP/1.1" 404 Not Found
+INFO:     184.105.139.70:63546 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     205.210.31.66:54858 - "GET / HTTP/1.0" 404 Not Found
+INFO:     45.198.224.26:48508 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     205.210.31.69:64508 - "GET /metrics HTTP/1.1" 404 Not Found
+INFO:     205.210.31.146:62910 - "GET /metrics HTTP/1.1" 404 Not Found
+INFO:     5.226.140.30:64942 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     193.176.31.247:8244 - "GET / HTTP/1.1" 404 Not Found
+INFO:     89.21.67.189:10990 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     193.176.31.196:10440 - "GET / HTTP/1.1" 404 Not Found
+INFO:     81.19.216.100:6728 - "GET /mcp/ HTTP/1.1" 404 Not Found
+INFO:     185.223.235.42:5362 - "GET /mcp HTTP/1.1" 404 Not Found
+INFO:     89.21.67.171:2228 - "GET /api/mcp HTTP/1.1" 404 Not Found
+INFO:     185.223.235.62:11818 - "GET /sse HTTP/1.1" 404 Not Found
+INFO:     64.62.156.182:38432 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.156.191:11633 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.62.156.191:42355 - "GET /?format=json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4089964]
+INFO:     Started server process [3754770]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:60308 - "GET /health HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:56406 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:56451 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:56452 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:56453 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:56500 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     45.194.92.14:39690 - "GET / HTTP/1.1" 404 Not Found
+INFO:     181.214.221.213:56566 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     45.198.224.26:37246 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     181.214.221.213:56693 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:56715 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:56927 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     127.0.0.1:60750 - "GET /health HTTP/1.1" 200 OK
+INFO:     45.205.1.247:33020 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.205.1.247:33022 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     181.214.221.213:57114 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'helper.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3754770]
+INFO:     Started server process [77573]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [77573]
+INFO:     Started server process [78953]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [78953]
+INFO:     Started server process [79115]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55640 - "GET /health HTTP/1.1" 200 OK
+INFO:     121.199.160.57:59730 - "GET / HTTP/1.0" 404 Not Found
+INFO:     121.199.160.57:33392 - "GET / HTTP/1.0" 404 Not Found
+INFO:     121.199.160.57:33376 - "POST /sdk HTTP/1.1" 404 Not Found
+INFO:     121.199.160.57:33394 - "GET /nmaplowercheck1787325221 HTTP/1.1" 404 Not Found
+INFO:     121.199.160.57:33562 - "GET /evox/about HTTP/1.1" 404 Not Found
+INFO:     121.199.160.57:33572 - "GET /HNAP1 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:57178 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     52.41.69.124:36048 - "POST /v1/alterar-autorizacao HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [79115]
+INFO:     Started server process [113027]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:57233 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     34.212.40.154:54964 - "POST /v1/alterar-autorizacao HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [113027]
+INFO:     Started server process [176915]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     34.212.40.154:54978 - "POST /v1/alterar-autorizacao HTTP/1.1" 404 Not Found
+INFO:     34.209.240.51:56700 - "POST /v1/alterar-autorizacao HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [176915]
+INFO:     Started server process [177567]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     181.214.221.213:57356 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     18.237.150.188:47498 - "POST /v1/alterar-autorizacao HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [177567]
+INFO:     Started server process [240849]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     18.237.150.188:47510 - "POST /v1/alterar-autorizacao HTTP/1.1" 404 Not Found
+INFO:     35.94.142.238:50728 - "POST /v1/alterar-autorizacao HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [240849]
+INFO:     Started server process [244040]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     54.191.76.18:57090 - "POST /v1/alterar-autorizacao HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [244040]
+INFO:     Started server process [244591]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [244591]
+INFO:     Started server process [246572]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     54.191.76.18:47054 - "POST /v1/alterar-autorizacao HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [246572]
+INFO:     Started server process [249754]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [249754]
+INFO:     Started server process [250996]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     34.209.169.243:45082 - "POST /v1/alterar-autorizacao HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [250996]
+INFO:     Started server process [255466]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     34.221.241.136:36996 - "POST /v1/alterar-autorizacao HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [255466]
+INFO:     Started server process [256716]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [256716]
+INFO:     Started server process [374391]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:49268 - "GET /health HTTP/1.1" 200 OK
+INFO:     181.214.221.213:57765 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:57870 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:57947 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:57948 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     45.82.78.100:44454 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.131.155.110:57136 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     151.243.11.233:58772 - "GET / HTTP/1.1" 404 Not Found
+INFO:     151.243.11.233:58774 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     181.214.221.213:58253 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:58274 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.221.213:58296 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     18.116.101.220:40166 - "GET / HTTP/1.1" 404 Not Found
+INFO:     181.214.221.213:58352 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+INFO:     181.214.221.213:58372 - "POST /v1/autorizar-entrada HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     154.6.145.14:51082 - "GET /v1/models HTTP/1.1" 404 Not Found
+INFO:     85.217.149.10:57380 - "GET / HTTP/1.1" 404 Not Found
+INFO:     85.217.149.16:45488 - "GET / HTTP/1.1" 404 Not Found
+INFO:     52.89.138.29:52868 - "POST /v1/alterar-autorizacao HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [374391]
+INFO:     Started server process [1145700]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     44.248.0.101:51246 - "POST /v1/alterar-autorizacao HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1145700]
+INFO:     Started server process [1146047]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1146047]
+INFO:     Started server process [1149506]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     45.198.224.26:52258 - "GET /login HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     195.184.76.184:40553 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     198.235.24.101:63666 - "GET /v1/metadata HTTP/1.1" 404 Not Found
+INFO:     199.45.155.53:49660 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.155.53:43292 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.155.53:43322 - "POST /mcp HTTP/1.1" 404 Not Found
+INFO:     199.45.155.53:44976 - "POST /jsonrpc HTTP/1.1" 404 Not Found
+INFO:     199.45.155.53:44984 - "POST / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.155.53:45072 - "GET /security.txt HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     165.154.129.188:35280 - "GET / HTTP/1.1" 404 Not Found
+INFO:     165.154.129.188:35292 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     165.154.129.188:35302 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     165.154.129.188:35312 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     165.154.129.188:54008 - "GET /sse HTTP/1.1" 404 Not Found
+INFO:     165.154.129.188:54022 - "GET /mcp HTTP/1.1" 404 Not Found
+INFO:     165.154.129.188:54034 - "GET /mcp-sse HTTP/1.1" 404 Not Found
+INFO:     165.154.129.188:54048 - "GET /get_server_info HTTP/1.1" 404 Not Found
+INFO:     65.49.20.66:5052 - "GET / HTTP/1.1" 404 Not Found
+INFO:     65.49.20.66:27348 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     65.49.20.66:24742 - "GET /?format=json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.235.24.41:49523 - "GET / HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     47.250.132.49:55400 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.198.224.26:34316 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     104.155.5.16:60074 - "GET / HTTP/1.1" 404 Not Found
+INFO:     205.210.31.99:62260 - "GET /metrics HTTP/1.1" 404 Not Found
+INFO:     147.185.132.94:61448 - "GET /metrics HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     47.84.102.160:55486 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.156.132:16406 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.156.141:8619 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     45.198.224.26:51068 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     103.112.55.155:40179 - "GET / HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     141.98.10.205:34714 - "GET /judge HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     141.98.10.205:34730 - "GET /judge HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     45.198.224.26:49290 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     205.210.31.69:63152 - "GET /v1/metadata HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.172.178:38302 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.172.178:10934 - "POST /mcp HTTP/1.1" 404 Not Found
+INFO:     66.132.172.178:5778 - "POST /jsonrpc HTTP/1.1" 404 Not Found
+INFO:     66.132.172.178:5780 - "POST / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.172.178:4724 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     205.210.31.56:54241 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.176.29.8:54278 - "GET / HTTP/1.1" 404 Not Found
+INFO:     89.21.67.168:14362 - "GET / HTTP/1.1" 404 Not Found
+INFO:     81.19.216.110:13202 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     81.19.216.66:9440 - "GET / HTTP/1.1" 404 Not Found
+INFO:     89.21.67.167:12346 - "GET /api/mcp HTTP/1.1" 404 Not Found
+INFO:     185.223.235.23:5290 - "GET /mcp HTTP/1.1" 404 Not Found
+INFO:     193.176.31.252:10916 - "GET /mcp/ HTTP/1.1" 404 Not Found
+INFO:     193.176.31.200:1194 - "GET /sse HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     198.235.24.90:60290 - "GET /metrics HTTP/1.1" 404 Not Found
+INFO:     205.210.31.200:57434 - "GET /metrics HTTP/1.1" 404 Not Found
+INFO:     94.154.43.197:38058 - "GET /geoserver/web/ HTTP/1.1" 404 Not Found
+INFO:     94.154.43.197:38060 - "GET /geoserver/wfs?service=wfs&version=2.0.0&request=GetCapabilities HTTP/1.1" 404 Not Found
+INFO:     94.154.43.197:38088 - "GET /geoserver/ows?service=WFS&version=2.0.0&request=GetCapabilities HTTP/1.1" 404 Not Found
+INFO:     94.154.43.197:38092 - "GET /geoserver/wms?service=WMS&version=1.1.1&request=GetCapabilities HTTP/1.1" 404 Not Found
+INFO:     94.154.43.197:38096 - "GET /geoserver/ogc/features/v1/collections HTTP/1.1" 404 Not Found
+INFO:     94.154.43.197:38102 - "GET /geoserver/rest/about/version.json HTTP/1.1" 404 Not Found
+INFO:     94.154.43.197:38106 - "GET /geoserver/rest/workspaces.json HTTP/1.1" 404 Not Found
+INFO:     94.154.43.197:38108 - "GET /geoserver/wcs?service=WCS&request=GetCapabilities HTTP/1.1" 404 Not Found
+INFO:     94.154.43.197:38114 - "GET /api/kernels HTTP/1.1" 404 Not Found
+INFO:     94.154.43.197:38118 - "GET /api/terminals HTTP/1.1" 404 Not Found
+INFO:     134.199.212.233:56952 - "GET / HTTP/1.1" 404 Not Found
+INFO:     134.199.212.233:56964 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     204.76.203.43:36708 - "GET /admin/login.asp HTTP/1.1" 404 Not Found
+INFO:     45.198.224.26:40926 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     66.132.172.40:51410 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.172.40:64500 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.172.40:48210 - "POST /mcp HTTP/1.1" 404 Not Found
+INFO:     66.132.172.40:48230 - "POST /jsonrpc HTTP/1.1" 404 Not Found
+INFO:     66.132.172.40:48244 - "POST / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.172.40:55228 - "GET /wiki HTTP/1.1" 404 Not Found
+INFO:     64.62.156.108:9570 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.156.114:45121 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.62.156.108:5163 - "GET /?format=json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     47.95.195.137:39728 - "GET / HTTP/1.1" 404 Not Found
+INFO:     47.95.195.137:39792 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     183.81.168.186:39336 - "GET /../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     209.54.106.219:52900 - "POST /RPC2_Login HTTP/1.1" 404 Not Found
+INFO:     3.129.187.38:20346 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.129.187.38:58172 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     64.62.156.162:63882 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.156.163:58837 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     47.74.56.223:19338 - "GET / HTTP/1.1" 404 Not Found
+INFO:     85.217.149.10:46220 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.198.224.26:54654 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     85.217.149.34:53970 - "GET / HTTP/1.1" 404 Not Found
+INFO:     205.210.31.228:49157 - "GET / HTTP/1.0" 404 Not Found
+INFO:     74.235.100.142:38764 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     18.97.5.69:33520 - "GET / HTTP/1.1" 404 Not Found
+INFO:     66.132.186.179:10202 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.186.179:61124 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.186.179:61136 - "POST /mcp HTTP/1.1" 404 Not Found
+INFO:     66.132.186.179:61148 - "POST /jsonrpc HTTP/1.1" 404 Not Found
+INFO:     66.132.186.179:61154 - "POST / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.186.179:53624 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     81.19.219.212:27155 - "GET / HTTP/1.1" 404 Not Found
+INFO:     89.21.67.157:15410 - "GET / HTTP/1.1" 404 Not Found
+INFO:     193.176.31.147:7712 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     89.21.67.187:6836 - "GET /mcp HTTP/1.1" 404 Not Found
+INFO:     81.19.216.95:1894 - "GET / HTTP/1.1" 404 Not Found
+INFO:     193.176.31.229:10976 - "GET /api/mcp HTTP/1.1" 404 Not Found
+INFO:     185.223.235.45:2398 - "GET /mcp/ HTTP/1.1" 404 Not Found
+INFO:     81.19.216.92:3994 - "GET /sse HTTP/1.1" 404 Not Found
+INFO:     152.32.189.202:15170 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.32.189.202:15414 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.32.189.202:15550 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     205.210.31.177:64096 - "GET /v1/metadata HTTP/1.1" 404 Not Found
+INFO:     151.243.11.233:41950 - "GET / HTTP/1.1" 404 Not Found
+INFO:     151.243.11.233:41956 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     45.198.224.26:56800 - "GET /login HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.195.60:38766 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.195.60:48026 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.195.60:35112 - "POST /mcp HTTP/1.1" 404 Not Found
+INFO:     66.132.195.60:35146 - "POST /jsonrpc HTTP/1.1" 404 Not Found
+INFO:     66.132.195.60:35162 - "POST / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.195.60:59886 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     64.62.156.152:43210 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.156.159:26899 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     47.254.44.85:25868 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.198.224.26:48380 - "GET /login HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1149506]
+INFO:     Started server process [3002700]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3002700]
+INFO:     Started server process [3002929]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:35024 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3002929]
+INFO:     Started server process [3003939]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3003939]
+INFO:     Started server process [3004933]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3004933]
+INFO:     Started server process [3004958]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3004958]
+INFO:     Started server process [3037803]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3037803]
+INFO:     Started server process [3038800]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3038800]
+INFO:     Started server process [3039068]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:33698 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3039068]
+INFO:     Started server process [3081493]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'config_eas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3081493]
+INFO:     Started server process [3084007]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51454 - "GET /health HTTP/1.1" 200 OK
+INFO:     64.62.156.108:32150 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.156.111:56835 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.62.156.116:60227 - "GET /?format=json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3084007]
+INFO:     Started server process [3176165]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:48668 - "GET /health HTTP/1.1" 200 OK

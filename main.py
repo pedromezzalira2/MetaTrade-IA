@@ -1,11 +1,20 @@
 from typing import Literal
 
 import uvicorn
-from fastapi import FastAPI, Header, HTTPException, status
+from fastapi import (
+    FastAPI,
+    Header,
+    HTTPException,
+    status,
+)
 from pydantic import BaseModel, Field
-from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic_settings import (
+    BaseSettings,
+    SettingsConfigDict,
+)
 
 from config_eas import CONFIGURACAO_EAS
+from helper import atualizar_autorizacao_ea
 
 
 # ============================================================
@@ -33,13 +42,15 @@ settings = Settings()
 
 app = FastAPI(
     title="API Orquestradora MT5",
-    description="API de autorização de novas entradas das EAs V8",
+    description=(
+        "API de autorização de novas entradas das EAs V8"
+    ),
     version="1.0.0",
 )
 
 
 # ============================================================
-# DADOS RECEBIDOS DAS EAs V8
+# DADOS RECEBIDOS DAS EAs
 # ============================================================
 
 class PedidoEntrada(BaseModel):
@@ -55,6 +66,7 @@ class PedidoEntrada(BaseModel):
 
     versao: str
     magic: int
+    usuario: int
     simbolo: str
     timeframe: str
     direcao: Literal["BUY", "SELL"]
@@ -62,21 +74,33 @@ class PedidoEntrada(BaseModel):
     preco_sinal: float
     stop_loss: float
     take_profit: float
-    volume_solicitado: float = Field(gt=0)
 
-    stops_dia: int = Field(ge=0)
-    entradas_dia: int = Field(ge=0)
+    volume_solicitado: float = Field(
+        gt=0
+    )
+
+    stops_dia: int = Field(
+        ge=0
+    )
+
+    entradas_dia: int = Field(
+        ge=0
+    )
+
     lucro_dia: float
 
     posicao_aberta: bool
     magic_posicao: int
-    volume_posicao: float = Field(ge=0)
+
+    volume_posicao: float = Field(
+        ge=0
+    )
 
     timestamp: int
 
 
 # ============================================================
-# RESPOSTA DEVOLVIDA PARA AS EAs V8
+# RESPOSTA DEVOLVIDA PARA AS EAs
 # ============================================================
 
 class RespostaAutorizacao(BaseModel):
@@ -87,15 +111,35 @@ class RespostaAutorizacao(BaseModel):
 
 
 # ============================================================
+# ALTERAÇÃO ENVIADA PELO BUBBLE
+# ============================================================
+
+class PedidoAlteracaoAutorizacao(BaseModel):
+    ea: str = Field(
+        min_length=1,
+        max_length=100,
+    )
+
+    autorizada: bool
+
+
+# ============================================================
 # AUTENTICAÇÃO
 # ============================================================
 
-def validar_token(authorization: str | None) -> None:
-    token_esperado = f"Bearer {settings.token}"
+def validar_token(
+    authorization: str | None,
+) -> None:
+
+    token_esperado = (
+        f"Bearer {settings.token}"
+    )
 
     if authorization != token_esperado:
         raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
+            status_code=(
+                status.HTTP_401_UNAUTHORIZED
+            ),
             detail="Token inválido ou ausente",
         )
 
@@ -111,7 +155,9 @@ def health():
         "servico": "api-mt5",
         "versao": "1.0.0",
         "porta": settings.port,
-        "eas_cadastradas": len(CONFIGURACAO_EAS),
+        "eas_cadastradas": len(
+            CONFIGURACAO_EAS
+        ),
     }
 
 
@@ -121,25 +167,91 @@ def health():
 
 @app.get("/v1/eas")
 def listar_eas(
-    authorization: str | None = Header(default=None),
+    authorization: str | None = Header(
+        default=None
+    ),
 ):
     validar_token(authorization)
 
     resultado = []
 
-    for nome_ea, configuracao in CONFIGURACAO_EAS.items():
+    for nome_ea, configuracao in (
+        CONFIGURACAO_EAS.items()
+    ):
         resultado.append(
             {
                 "ea": nome_ea,
-                "magic": configuracao["magic"],
-                "autorizada": configuracao["autorizada"],
-                "contratos": configuracao["contratos"],
+                "magic": configuracao[
+                    "magic"
+                ],
+                "autorizada": configuracao[
+                    "autorizada"
+                ],
+                "contratos": configuracao[
+                    "contratos"
+                ],
             }
         )
 
     return {
         "quantidade": len(resultado),
         "eas": resultado,
+    }
+
+
+# ============================================================
+# ALTERAÇÃO DE AUTORIZAÇÃO PELO BUBBLE
+# ============================================================
+
+@app.post("/v1/alterar-autorizacao")
+def alterar_autorizacao(
+    pedido: PedidoAlteracaoAutorizacao,
+    authorization: str | None = Header(
+        default=None
+    ),
+):
+    validar_token(authorization)
+
+    try:
+        configuracao = (
+            atualizar_autorizacao_ea(
+                nome_ea=pedido.ea,
+                autorizada=pedido.autorizada,
+                configuracao_eas=(
+                    CONFIGURACAO_EAS
+                ),
+            )
+        )
+
+    except KeyError:
+        raise HTTPException(
+            status_code=(
+                status.HTTP_404_NOT_FOUND
+            ),
+            detail="EA não cadastrada na API",
+        )
+
+    except (
+        OSError,
+        TypeError,
+        ValueError,
+    ) as erro:
+        raise HTTPException(
+            status_code=(
+                status.HTTP_500_INTERNAL_SERVER_ERROR
+            ),
+            detail=(
+                "Não foi possível atualizar "
+                f"a configuração: {erro}"
+            ),
+        )
+
+    return {
+        "sucesso": True,
+        "mensagem": (
+            "Autorização atualizada"
+        ),
+        **configuracao,
     }
 
 
@@ -153,65 +265,87 @@ def listar_eas(
 )
 def autorizar_entrada(
     pedido: PedidoEntrada,
-    authorization: str | None = Header(default=None),
+    authorization: str | None = Header(
+        default=None
+    ),
 ):
     validar_token(authorization)
 
-    # Procura pelo nome exato enviado pela EA V8.
-    configuracao = CONFIGURACAO_EAS.get(pedido.ea)
+    configuracao = CONFIGURACAO_EAS.get(
+        pedido.ea
+    )
 
-    # Bloqueia EAs que não estejam cadastradas.
     if configuracao is None:
         return RespostaAutorizacao(
             autorizado=False,
             volume=0.0,
-            motivo="EA não cadastrada na API",
+            motivo=(
+                "EA não cadastrada na API"
+            ),
             request_id=pedido.request_id,
         )
 
-    # Confirma que nome e MagicNumber pertencem à mesma EA.
     if pedido.magic != configuracao["magic"]:
         return RespostaAutorizacao(
             autorizado=False,
             volume=0.0,
-            motivo="MagicNumber não corresponde à EA",
+            motivo=(
+                "MagicNumber não corresponde à EA"
+            ),
             request_id=pedido.request_id,
         )
 
-    # Consulta a variável booleana da EA.
+    if pedido.usuario not in configuracao["usuario"]:
+        return RespostaAutorizacao(
+            autorizado=False,
+            volume=0.0,
+            motivo=(
+                "Usuário não autorizado para esta EA"
+            ),
+            request_id=pedido.request_id,
+        )
+
     if not configuracao["autorizada"]:
         return RespostaAutorizacao(
             autorizado=False,
             volume=0.0,
-            motivo="EA desativada pela configuração da API",
+            motivo=(
+                "EA desativada pela "
+                "configuração da API"
+            ),
             request_id=pedido.request_id,
         )
 
-    # Não permite nova entrada se já existe posição aberta.
     if pedido.posicao_aberta:
         return RespostaAutorizacao(
             autorizado=False,
             volume=0.0,
-            motivo="Já existe posição aberta no símbolo",
+            motivo=(
+                "Já existe posição aberta "
+                "no símbolo"
+            ),
             request_id=pedido.request_id,
         )
 
     contratos = configuracao["contratos"]
 
-    # Bloqueia quantidade inválida.
     if contratos <= 0:
         return RespostaAutorizacao(
             autorizado=False,
             volume=0.0,
-            motivo="Quantidade de contratos inválida",
+            motivo=(
+                "Quantidade de contratos inválida"
+            ),
             request_id=pedido.request_id,
         )
 
-    # Autoriza usando a quantidade definida em config_eas.py.
     return RespostaAutorizacao(
         autorizado=True,
         volume=float(contratos),
-        motivo="EA autorizada pela configuração da API",
+        motivo=(
+            "EA autorizada pela "
+            "configuração da API"
+        ),
         request_id=pedido.request_id,
     )
 
