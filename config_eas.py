@@ -1,5 +1,5 @@
 # ============================================================
-# CONFIGURAÇÃO OPERACIONAL DAS EAs V8
+# CONFIGURAÇÃO OPERACIONAL COMPLETA DAS EAs
 # ============================================================
 
 CONFIGURACAO_EAS = {
@@ -13,7 +13,7 @@ CONFIGURACAO_EAS = {
     "IFR_3_SUPABASE_V8": {
         "magic": 108060,
         "autorizada": True,
-        "contratos": 2,
+        "contratos": 1,
         "usuario": [1199686899, 1000066153],
     },
 
@@ -55,7 +55,64 @@ CONFIGURACAO_EAS = {
     "TT_35_SUPABASE_V8": {
         "magic": 108066,
         "autorizada": True,
-        "contratos": 10,
+        "contratos": 1,
+        "usuario": [1199686899, 1000066153],
+    },
+
+    "VWAP_RETOMADA_V1": {
+        "magic": 120101,
+        "autorizada": True,
+        "contratos": 1,
+        "usuario": [1199686899, 1000066153],
+    },
+
+    "ORB_15_V1": {
+        "magic": 120102,
+        "autorizada": True,
+        "contratos": 1,
+        "usuario": [1199686899, 1000066153],
+    },
+
+    "BOLLINGER_SQUEEZE_V1": {
+        "magic": 120103,
+        "autorizada": True,
+        "contratos": 1,
+        "usuario": [1199686899, 1000066153],
+    },
+
+    "FALSO_ROMPIMENTO_V1": {
+        "magic": 120104,
+        "autorizada": True,
+        "contratos": 1,
+        "usuario": [1199686899, 1000066153],
+    },
+
+    "EMA_9_21_RETESTE_V1": {
+        "magic": 120105,
+        "autorizada": True,
+        "contratos": 1,
+        "usuario": [1199686899, 1000066153],
+    },
+
+    "VOLUME_CLIMAX_V1": {
+        "magic": 120106,
+        "autorizada": True,
+        "contratos": 1,
+        "usuario": [1199686899, 1000066153],
+    },
+
+    "DONCHIAN_PULLBACK_V1": {
+        "magic": 120107,
+        "autorizada": True,
+        "contratos": 1,
+        "usuario": [1199686899, 1000066153],
+    },
+
+    "GAP_REVERSAO_V1": {
+        "magic": 120108,
+        "autorizada": True,
+        "contratos": 1,
         "usuario": [1199686899, 1000066153],
     },
 }
+

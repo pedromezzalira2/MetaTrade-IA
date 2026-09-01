@@ -163,10 +163,12 @@ def health():
 
 # ============================================================
 # LISTAGEM DAS EAs CADASTRADAS
+# FILTRADA PELO USUÁRIO
 # ============================================================
 
 @app.get("/v1/eas")
 def listar_eas(
+    usuario: int,
     authorization: str | None = Header(
         default=None
     ),
@@ -178,6 +180,11 @@ def listar_eas(
     for nome_ea, configuracao in (
         CONFIGURACAO_EAS.items()
     ):
+        # Retorna somente as EAs às quais
+        # este usuário possui acesso.
+        if usuario not in configuracao["usuario"]:
+            continue
+
         resultado.append(
             {
                 "ea": nome_ea,

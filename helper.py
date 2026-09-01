@@ -9,20 +9,30 @@ from typing import Any
 _LOCK_CONFIGURACAO = threading.Lock()
 
 
-def _localizar_bloco_ea(conteudo: str, nome_ea: str) -> tuple[int, int]:
+def _localizar_bloco_ea(
+    conteudo: str,
+    nome_ea: str,
+) -> tuple[int, int]:
+
     marcador_duplo = f'"{nome_ea}"'
     marcador_simples = f"'{nome_ea}'"
 
     inicio = conteudo.find(marcador_duplo)
+
     if inicio < 0:
         inicio = conteudo.find(marcador_simples)
 
     if inicio < 0:
-        raise ValueError("EA não encontrada no arquivo config_eas.py")
+        raise ValueError(
+            "EA não encontrada no arquivo config_eas.py"
+        )
 
     abertura = conteudo.find("{", inicio)
+
     if abertura < 0:
-        raise ValueError("Bloco da EA inválido no arquivo config_eas.py")
+        raise ValueError(
+            "Bloco da EA inválido no arquivo config_eas.py"
+        )
 
     nivel = 0
 
@@ -31,6 +41,7 @@ def _localizar_bloco_ea(conteudo: str, nome_ea: str) -> tuple[int, int]:
 
         if caractere == "{":
             nivel += 1
+
         elif caractere == "}":
             nivel -= 1
 
@@ -42,7 +53,11 @@ def _localizar_bloco_ea(conteudo: str, nome_ea: str) -> tuple[int, int]:
     )
 
 
-def _gravar_atomicamente(caminho: Path, conteudo: str) -> None:
+def _gravar_atomicamente(
+    caminho: Path,
+    conteudo: str,
+) -> None:
+
     caminho = caminho.resolve()
     arquivo_temporario: str | None = None
 
@@ -56,9 +71,12 @@ def _gravar_atomicamente(caminho: Path, conteudo: str) -> None:
             suffix=".tmp",
             delete=False,
         ) as temporario:
+
             arquivo_temporario = temporario.name
+
             temporario.write(conteudo)
             temporario.flush()
+
             os.fsync(temporario.fileno())
 
         os.chmod(
@@ -102,6 +120,7 @@ def atualizar_autorizacao_ea(
     )
 
     with _LOCK_CONFIGURACAO:
+
         conteudo = caminho_config.read_text(
             encoding="utf-8"
         )
@@ -162,3 +181,51 @@ def atualizar_autorizacao_ea(
                 nome_ea
             ]["contratos"],
         }
+
+
+# ==========================================================
+# CONSULTA / GET
+# ==========================================================
+
+def obter_autorizacao_ea(
+    nome_ea: str,
+    configuracao_eas: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    """
+    Retorna o estado atual de uma única EA.
+    """
+
+    if nome_ea not in configuracao_eas:
+        raise KeyError(nome_ea)
+
+    configuracao = configuracao_eas[nome_ea]
+
+    return {
+        "ea": nome_ea,
+        "magic": configuracao["magic"],
+        "autorizada": configuracao["autorizada"],
+        "contratos": configuracao["contratos"],
+    }
+
+
+def obter_autorizacoes_eas(
+    configuracao_eas: dict[str, dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """
+    Retorna o estado atual de todas as EAs.
+    """
+
+    resultado = []
+
+    for nome_ea, configuracao in configuracao_eas.items():
+
+        resultado.append(
+            {
+                "ea": nome_ea,
+                "magic": configuracao["magic"],
+                "autorizada": configuracao["autorizada"],
+                "contratos": configuracao["contratos"],
+            }
+        )
+
+    return resultado
