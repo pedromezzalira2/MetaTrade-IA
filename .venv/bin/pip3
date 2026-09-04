@@ -1,4 +1,4 @@
-#!/home/pedro/modelo/MetaTrader/.venv/bin/python
+#!/home/pedro/modelo/Metatrader5/MetaTraderEA/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

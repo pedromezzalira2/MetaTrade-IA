@@ -1,16 +1,12 @@
 # Arquivo atualizado automaticamente pelo helper.py
 # Não editar manualmente durante a execução do servidor.
 
-RESULTADOS_IA = {
-    "WINV26": {
-        "ativo": "WINV26",
-        "direcao": "NEUTRA",
-        "forca": 35,
-        "tendencia": "LATERAL",
-        "volatilidade": "BAIXA",
-        "confianca": 70,
-        "risco": "MEDIO",
-        "estadoMercado": "LATERAL",
-        "validoAte": "2026-09-01T15:20:53"
-    }
-}
+RESULTADOS_IA = {'WINV26': {'ativo': 'WINV26',
+            'direcao': 'COMPRA',
+            'forca': 65,
+            'tendencia': 'ALTA',
+            'volatilidade': 'BAIXA',
+            'confianca': 75,
+            'risco': 'BAIXO',
+            'estadoMercado': 'FORCA_COMPRADORA_AUMENTANDO',
+            'validoAte': '2026-09-04T12:30:04'}}

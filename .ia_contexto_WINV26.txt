@@ -1,25 +1,10 @@
-### Contexto Histórico Estrutural - WINV26 (M5)
+Contexto histórico compactado para o WINV26 (M5):
 
-- **Comportamento Típico de Tendência:** 
-  Movimentos direcionais expressivos concentram-se majoritariamente nos horários de abertura (9:00 às 10:00) e nos blocos de maior liquidez institucional (manhã entre 10:30 e 11:30). As pernas de tendência caracterizam-se por impulsos rápidos seguidos por correções em bandeira ou flâmula de curta duração.
-
-- **Comportamento em Lateralização:** 
-  Períodos de consolidação ocorrem tipicamente no meio do pregão (12:00 às 14:00), evidenciados por candles de menor amplitude, sombras longas em ambas as extremidades e contração drástica no volume de negócios (TICKVOL e VOL).
-
-- **Volatilidade:** 
-  Apresenta forte assimetria de volatilidade. Picos agudos de amplitude ocorrem na abertura dos leilões e em momentos de notícias macroeconômicas, enquanto o restante da sessão exibe alta compressão de preço com Spreads predominantemente constantes.
-
-- **Expansão e Contração:** 
-  Ciclos claros de expansão e contração de volatilidade (padrão de alargamento e funil). A expansão costuma ser iniciada por rompimentos de máximas ou mínimas de períodos anteriores acompanhados de alta injeção de volume, enquanto a contração precede zonas de indefinição de mercado.
-
-- **Reversões:** 
-  Pontos de inflexão e reversão relevantes ocorrem frequentemente em topos e fundos prévios do dia, marcados por candles de exaustão com aumento repentino de volume (volume climático) e retração imediata na mesma barra ou na seguinte.
-
-- **Continuidade:** 
-  A continuidade do movimento principal do dia tende a ser confirmada quando há renovação de extremos (máximas/mínimas) na primeira hora de negociação, com testes de pullback rasos que respeitam as médias de curto prazo.
-
-- **Características Recorrentes do Ativo:** 
-  Presença de "fakeouts" (falsos rompimentos) recorrentes em períodos de baixa liquidez (almoço). O ativo responde de forma muito sensível a patamares de preços inteiros e regiões de alta concentração de volume histórico.
-
-- **Comportamento de Preço Relevante para Análise M5:** 
-  O gráfico de 5 minutos revela alta sensibilidade a fechamentos de candles fora de zonas de consolidação. Fechamentos com corpos expressivos fora de ranges laterais anteriores frequentemente acionam acelerações de curto prazo, enquanto candles de indecisão (Dojis e Spinning Tops) com volume acima da média funcionam como alertas imediatos de retração.
+- **Comportamento Típico de Tendência:** Movimentos direcionais fortes costumam iniciar com alta amplitude e volume expressivo logo nos primeiros minutos do pregão (abertura às 09:00). As pernas de tendência tendem a manter a progressão de preços em blocos de candles consecutivos na mesma direção, especialmente entre 10:00 e 11:30, e novamente no início da tarde (13:00 - 14:00).
+- **Comportamento em Lateralización:** Períodos de consolidação ocorrem frequentemente em horários intermediários de baixa liquidez (por exemplo, entre 12:00 e 13:00), caracterizados por candles de menor amplitude, corpos curtos e diminuição drástica no volume de ticks e financeiro, respeitando faixas estreitas de suporte e resistência de curto prazo.
+- **Volatilidade:** Alta volatilidade intrínseca na abertura e em janelas específicas de notícias ou rompimentos importantes (onde o volume salta de centenas para milhares de contratos). O range dos candles M5 expande-se acentuadamente nesses momentos, alternando com faixas de baixa volatilidade.
+- **Expansão e Contração:** Os ciclos de expansão ocorrem tipicamente em rompimentos de máximas/mínimas anteriores acompanhados de volume financeiro elevado. A contração sucede esses impulsos, formando zonas de retração ou congestão de curto prazo antes de um novo teste direcional.
+- **Reversões:** Pontos de reversão intraday relevantes frequentemente deixam rastros de exaustão em candles de pavios longos associados a picos repentinos de volume. As reversões mais limpas costumam acontecer após falsos rompimentos de faixas de preço consolidadas.
+- **Continuidade:** O ativo demonstra continuidade eficiente quando há alinhamento entre o fechamento próximo às extremidades do candle M5 e o incremento progressivo de volume, indicando fluxo direcional persistente sem rejeição imediata.
+- **Características Recorrentes do Ativo:** Forte concentração de liquidez e volatilidade nas aberturas de períodos (9:00, 10:00, 11:00); tendência a correções rápidas (pullbacks agressivos) após impulsos direcionais longos; e redução gradual da atividade de negociação nas últimas horas do pregão regular, com respiros de volatilidade no leilão de fechamento (18:00 - 18:20).
+- **Comportamento de Preço Relevante para M5:** Monitorar a amplitude dos candles de 5 minutos nos horários de abertura (09:00-09:15) e viradas de hora cheia (10:00, 11:00, 14:30), pois zonas de máxima variação de preço e picos de volume nesses exatos instantes definem os parâmetros de referência para o comportamento intraday.
