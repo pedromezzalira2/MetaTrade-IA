@@ -1,5 +1,6 @@
 from typing import Literal
 from pathlib import Path
+from datetime import datetime
 
 import uvicorn
 
@@ -805,6 +806,25 @@ def autorizar_entrada(
     # --------------------------------------------------------
     # EA precisa estar ligada
     # --------------------------------------------------------
+
+  # --------------------------------------------------------
+    # TRAVA GLOBAL DE FIM DE SEMANA
+    # Sábado = 5 | Domingo = 6
+    # --------------------------------------------------------
+
+    if datetime.now().weekday() >= 5:
+
+        return RespostaAutorizacao(
+            autorizado=False,
+            volume=0.0,
+            motivo=(
+                "Operações bloqueadas "
+                "durante o fim de semana"
+            ),
+            request_id=(
+                pedido.request_id
+            ),
+        )
 
     if not configuracao.get(
         "autorizada",
